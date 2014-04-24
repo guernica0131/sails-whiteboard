@@ -1,0 +1,13 @@
+.container {
+	@include container; 
+	@include clearfix; 
+}
+
+.clearfix {
+	@include clearfix;
+}
+
+.span4-10 {
+	@include span(4 wide of 10);
+}
+

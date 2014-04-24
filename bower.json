@@ -1,0 +1,26 @@
+{
+    "name": "eCoursity",
+    "version": "0.0.1",
+    "authors": [
+        "dev@eCoursity.com"
+    ],
+    "description": "This is the base framework for the eCoursity Learning Market",
+    "keywords": [
+        "Learning"
+    ],
+    "license": "MIT",
+    "homepage": "eCoursity.com",
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "ember": "~1.5.0",
+        "ember-data": "~1.0.0-beta.4",
+        "ember-data-sails-adapter": "~2.0.0"
+    }
+}

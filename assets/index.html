@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>eCoursity</title>
+
+    <!-- Viewport mobile tag for sensible mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    
+    <!--STYLES-->
+    <!--STYLES END-->
+  </head>
+
+  <body>
+    
+    <!-- application outlet -->
+
+    <script type="text/x-handlebars" data-template-name="application">
+        <div class="container">
+        {{outlet}}
+        </div>
+    </script>
+
+    <script type="text/x-handlebars" data-template-name="index">
+         
+         <div class="span2-10">
+            {{#each}}
+             <p>{{name}}</p>
+            {{/each}}
+         </div>
+
+        <div class="span2-10">
+            {{input valueBinding="newName"}}
+            <button {{action 'createFile'}} class="">Create File</button>
+        </div>
+
+    </script>
+
+
+    <!--SCRIPTS-->
+    <!--SCRIPTS END-->
+  </body>
+</html>
