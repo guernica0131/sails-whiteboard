@@ -10,7 +10,7 @@ module.exports = {
 
     index: function(req, res, next) {
 
-        console.log("My rooms");
+
 
         return next();
 
