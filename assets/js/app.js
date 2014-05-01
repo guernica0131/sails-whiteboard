@@ -38,7 +38,7 @@ window.App = Ember.Application.create({
 ///////////////////////////////////////////
 //// SAILS Adapter
 ///////////////////////////////////////////
-var host = 'http://localhost:1337',
+var host = 'http://localhost',
     applicationSpace = '/api/v1';
 
 io.socket = io.connect(host);
