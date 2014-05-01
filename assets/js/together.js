@@ -74,7 +74,7 @@ window.Whiteboard = (function(canvas, context, callback) {
             try {
                 draw(lines[i][0], lines[i][1], lines[i][2], lines[i][3], lines[i][4], false);
             } catch (e) {
-                console.log("ERROR", e):
+                console.log("ERROR", e);
             }
         }
     }
