@@ -68,8 +68,14 @@ window.Whiteboard = (function(canvas, context, callback) {
 
     // Redraws the lines from the lines-array:
     function reDraw(lines) {
+
+
         for (var i in lines) {
-            draw(lines[i][0], lines[i][1], lines[i][2], lines[i][3], lines[i][4], false);
+            try {
+                draw(lines[i][0], lines[i][1], lines[i][2], lines[i][3], lines[i][4], false);
+            } catch (e) {
+                console.log("ERROR", e):
+            }
         }
     }
     // Draws the lines, called by move and the TogetherJS event listener:
