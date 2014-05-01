@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-# eCoursity
 
-a [Sails](http://sailsjs.org) application
-=======
-sails-whiteboard
-================
+# Whiteborad
 
-Sails-Ember-Whiteboard
->>>>>>> 0d7d5657e5e99da5956574c30995c40d0688f461
+
+This application uses Sails.js framework. It integreates Ember.js on the frontend and provides *BASIC* whiteboard functionality and is for demonstration purposes only. It mimics an example application found on TogetherJS. There are more comprehensive whiteboard applications available on git. 
