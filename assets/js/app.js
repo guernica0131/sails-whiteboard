@@ -41,7 +41,7 @@ window.App = Ember.Application.create({
 var host = 'http://localhost',
     applicationSpace = '/api/v1';
 
-io.socket = io.connect(host);
+io.socket = io.connect();
 
 App.ApplicationAdapter = DS.SailsSocketAdapter.extend({
     namespace: applicationSpace,
