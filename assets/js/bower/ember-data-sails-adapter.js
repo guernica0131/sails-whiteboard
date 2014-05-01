@@ -286,7 +286,9 @@
                     this.readyState(callback);
                 }.bind(this), 100);
         },
-
+        getCSRF: function() {
+            return this.CSRFToken
+        },
         checkCSRF: function(method, data, callback) {
             if (method !== 'get')
                 this.readyState(function() {

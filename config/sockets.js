@@ -18,14 +18,19 @@ module.exports.sockets = {
 
         // By default, do nothing.
 
-        File.watch(socket);
+        Conversation.watch(socket);
+
+        console.log("connecting....", socket.id);
+
+        sails.sockets.leave(socket, 'whiteboard');
 
     },
 
     // This custom onDisconnect function will be run each time a socket disconnects
     onDisconnect: function(session, socket) {
-
+        console.log("disconnecting....", socket.id);
         // By default: do nothing.
+        sails.sockets.leave(socket, 'whiteboard');
     },
 
 
@@ -39,7 +44,8 @@ module.exports.sockets = {
         'websocket',
         'htmlfile',
         'xhr-polling',
-        'jsonp-polling'
+        'jsonp-polling',
+        'flashsocket'
     ],
 
 

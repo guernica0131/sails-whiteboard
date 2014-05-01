@@ -1,0 +1,49 @@
+.upper-button {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.bottom-button {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.black-pick:hover {
+    background-color: #000;
+    border-color: #000;
+}
+
+.black-pick {
+    background-color: #202020;
+    border-color: #202020;
+}
+
+
+
+#conversation {
+    position: absolute;
+    top: 50px;
+    left: 72%;
+    width: 100%;
+    max-width: 300px;
+    padding-right: 20px;
+    margin: 0;
+    padding: 0;
+    ul {
+        max-height: 500px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        overflow-y: scroll;
+        @include border-radius(4px);
+        li {
+            &:first-child {
+                p {
+                    color: green !important;
+                }
+            }
+            margin: 0;
+            padding: 0;
+            padding: 10px;
+            @include box-shadow(inset 0px -5px 3px -5px rgba(50, 50, 50, 0.75));
+        }
+    }
+}

@@ -2,7 +2,12 @@
  * This is our primary file where the application gets loaded and we start up Ember
  */
 window.App = Ember.Application.create({
-    LOG_TRANSITIONS: true
+    LOG_TRANSITIONS: true,
+    ready: function() {
+        // will be called when the app is ready
+        console.log("OK, building app");
+        //   Whiteboard();
+    }
 });
 
 

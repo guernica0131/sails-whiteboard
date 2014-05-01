@@ -1,12 +1,10 @@
 /**
- * FileController.js
+ * WorkController.js 
  *
  * @description ::
  * @docs        :: http://sailsjs.org/#!documentation/controllers
  */
 
 module.exports = {
-
-
-
+	
 };
